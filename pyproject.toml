@@ -1,6 +1,6 @@
 [project]
 name = "delegate-events"
-version = "0.0.0"
+dynamic = ["version"]
 description = "Python implementation of the Event Pattern"
 keywords = ["windows", "linux", "delegates", "events"]
 readme = "README.md"
