@@ -4,7 +4,9 @@
 
 The `Channel` class is the event channel returned by the delegate, and its jobs are handling subscriptions and firing of events.
 
-### Channel.subscribe(handler: _Callable[[object, T\<Event>], None]_)
+## Functions
+
+### subscribe(handler: _Callable[[object, T\<Event>], None]_)
 
 The `subscribe` function subscribes a handler function to the channel. The function takes 1 argument:
 - handler: `Callable[[object, Event], None]`
@@ -22,7 +24,7 @@ channel.subscribe(handler)
 ```
 
 
-### Channel.unsubscribe(handler: _Callable[[object, T\<Event>], None]_)
+### unsubscribe(handler: _Callable[[object, T\<Event>], None]_)
 The `unsubscribe` function unsubscribes a handler function from the channel. The function takes 1 argument:
 - handler: `Callable[[object, Event], None]`
 
@@ -38,7 +40,7 @@ channel.subscribe(handler)
 channel.unsubscribe(handler)
 ```
 
-### Channel.fire(event: _T\<Event>_, *, ttl: _float | None = 0_) -> _bool_ function
+### fire(event: _T\<Event>_, *, ttl: _float | None = 0_) -> _bool_ function
 The `fire` function fires the event, invoking all subscribed handlers. The function returns True if event was successfully sent and takes 1 argument:
 - event: `Event`
 

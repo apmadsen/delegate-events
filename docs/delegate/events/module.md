@@ -4,5 +4,5 @@
 
 ## Classes
 
-### [`Event`](/docs/delegate/events/event.md)
 ### [`Channel`](/docs/delegate/events/channel.md)
+### [`Event`](/docs/delegate/events/event.md)
