@@ -1,6 +1,6 @@
 [Documentation](/docs/documentation.md)
 
-# Documentation
+# Delegate Events documentation
 
-### [`delegate.events` module](/docs/delegate/events/module.md)
+### [Version 0.0](0.0/version.md)
 
