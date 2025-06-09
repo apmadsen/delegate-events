@@ -5,5 +5,5 @@
 
 ## Modules
 
-### [`delegate.events` module](delegate/events/module.md)
+### [delegate](delegate/module.md)
 
