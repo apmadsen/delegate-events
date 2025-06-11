@@ -27,7 +27,7 @@ classifiers = [
     "Typing :: Typed"
 ]
 dependencies = [
-    "delegate-pattern >= 0.0.0, < 0.1"
+    "delegate-pattern >= 0.0.1, < 0.1"
 ]
 requires-python = ">=3.10"
 
