@@ -4,7 +4,7 @@
    [events](/docs/0.0/delegate/events/module.md) >
     Event
 
-# Event class
+# Event
 
 The `Event` class is the base class of all events. Events are the classes holding the event information, when an event is fired, thus, when subclassed, should contain properties/fields of the event information.
 
