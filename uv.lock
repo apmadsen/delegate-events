@@ -116,7 +116,7 @@ test = [
 
 [package.metadata]
 requires-dist = [
-    { name = "delegate-pattern", specifier = ">=0.1.0a1,<0.2" },
+    { name = "delegate-pattern", specifier = ">=0.1.0,<0.2" },
     { name = "pytest", marker = "extra == 'test'", specifier = ">=8.3" },
     { name = "pytest-cov", marker = "extra == 'test'", specifier = ">=6.1" },
 ]
@@ -124,14 +124,14 @@ provides-extras = ["test"]
 
 [[package]]
 name = "delegate-pattern"
-version = "0.1.0a1"
+version = "0.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-utilities" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d8/67/a05bb9d96e4d5650147fe9fc686c474f2095a3dc1947e07db7f5b4fb9f8b/delegate_pattern-0.1.0a1.tar.gz", hash = "sha256:1b2cb20e658d36167c8268e8d4379a778387c275b7743ddc0c23901c0404ae3d", size = 9843, upload-time = "2025-10-07T06:09:27.166Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/08/cd/3c42ae55165c59446dca5c358d29cc4c9a85833ffa3da95b77f6309625b9/delegate_pattern-0.1.0.tar.gz", hash = "sha256:c8deeceaff9715d61a302ab2f7a6dd8bc75f1967ebe16fb0ead4560652dc8fea", size = 9818, upload-time = "2025-10-27T07:36:25.939Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ef/ee/6eb30a54744d78b20f6be9364c95170e0a720caa9a56ce42b75aa82bc482/delegate_pattern-0.1.0a1-py3-none-any.whl", hash = "sha256:ad1a38303645f50e89bdf1f386e86b2b1bcf418dc20d1c494eb782f5487707ed", size = 11041, upload-time = "2025-10-07T06:09:25.886Z" },
+    { url = "https://files.pythonhosted.org/packages/5b/1f/b6b9f2586410f51449b1ba5572b468e6bb09ef2ec7de0f4909d9bb4b689d/delegate_pattern-0.1.0-py3-none-any.whl", hash = "sha256:624058a99072893b006c467d947c5ccb23ebfc3dc1098d54536059fdabbd9524", size = 11016, upload-time = "2025-10-27T07:36:24.564Z" },
 ]
 
 [[package]]
