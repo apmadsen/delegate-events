@@ -1,4 +1,5 @@
 # pyright: basic
+# ruff: noqa
 from typing import Any
 from time import sleep
 import gc
