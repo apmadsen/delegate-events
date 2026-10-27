@@ -2,6 +2,7 @@ from datetime import datetime
 
 from delegate.events.core.event import Event
 
+
 class QueuedEvent:
     __slots__ = [ "__event", "__expires" ]
 
