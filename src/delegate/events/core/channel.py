@@ -1,31 +1,35 @@
 from __future__ import annotations
-from typing import Generic, TypeVar, MutableSequence, Callable, cast, overload
+
+from collections.abc import Callable, MutableSequence
 from datetime import datetime, timedelta
 from threading import RLock
+from typing import Generic, TypeVar, cast, overload
 from weakref import ref
 
 from delegate.events.core.channel_closed_error import ChannelClosedError
 from delegate.events.core.event import Event
-from delegate.events.core.queued_event import QueuedEvent
-from delegate.events.core.handler_already_subscribed_error import HandlerAlreadySubscribedError
+from delegate.events.core.handler_already_subscribed_error import (
+    HandlerAlreadySubscribedError,
+)
 from delegate.events.core.handler_not_subscribed_error import HandlerNotSubscribedError
+from delegate.events.core.queued_event import QueuedEvent
 
-T = TypeVar("T", bound=Event, contravariant=True)
+T = TypeVar("T", bound=Event, contravariant=True)  # noqa: PLC0105
+
+
 class Channel(Generic[T]):
-    __slots__ = [ "__publisher", "__subscribers", "__queue", "__queue_lock", "__weakref__", "__closed" ]
+    __slots__ = ["__closed", "__publisher", "__queue", "__queue_lock", "__subscribers", "__weakref__"]
 
     @overload
     def __init__(self) -> None:
         """
         Creates a channel without a publisher. This is meant for testing purposes.
         """
-        ...
     @overload
     def __init__(self, delegator: object) -> None:
         """
         Creates a delegate channel for specific publisher (delegator).
         """
-        ...
     def __init__(self, delegator: object | None = None):
         self.__publisher = ref(delegator) if delegator is not None else None
         self.__subscribers: MutableSequence[Callable[[object, T], None]] = []
